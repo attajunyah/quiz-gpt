@@ -1,22 +1,183 @@
 [
     {
-      "text": "What is the primary purpose of cybersecurity?",
+      "text": "What is cybersecurity?",
       "options": [
-        { "id": 0, "text": "To speed up computer processes", "isCorrect": false },
-        { "id": 1, "text": "To protect systems, networks, and data from digital attacks", "isCorrect": true },
-        { "id": 2, "text": "To repair hardware", "isCorrect": false },
-        { "id": 3, "text": "To enhance software aesthetics", "isCorrect": false }
+        { "id": 0, "text": "The practice of protecting systems, networks, and programs from digital attacks.", "isCorrect": true },
+        { "id": 1, "text": "The legal process of prosecuting hackers.", "isCorrect": false },
+        { "id": 2, "text": "A method of developing software.", "isCorrect": false },
+        { "id": 3, "text": "A type of computer hardware.", "isCorrect": false }
       ]
     },
     {
-      "text": "Which of the following is considered a social engineering attack?",
+      "text": "What does the 'CIA Triad' stand for in cybersecurity?",
       "options": [
-        { "id": 0, "text": "SQL injection", "isCorrect": false },
-        { "id": 1, "text": "Phishing", "isCorrect": true },
-        { "id": 2, "text": "Ransomware", "isCorrect": false },
-        { "id": 3, "text": "Denial of Service attack", "isCorrect": false }
+        { "id": 0, "text": "Confidentiality, Integrity, Availability", "isCorrect": true },
+        { "id": 1, "text": "Central Intelligence Agency", "isCorrect": false },
+        { "id": 2, "text": "Confidentiality, Insurance, Assurance", "isCorrect": false },
+        { "id": 3, "text": "Computing, Internet, Access", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Which of the following is a type of malware?",
+      "options": [
+        { "id": 0, "text": "Virus", "isCorrect": false },
+        { "id": 1, "text": "Worm", "isCorrect": false },
+        { "id": 2, "text": "Trojan Horse", "isCorrect": false },
+        { "id": 3, "text": "All of the above", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "What is a phishing attack?",
+      "options": [
+        { "id": 0, "text": "An attempt by cybercriminals to scam users by pretending to be trustworthy entities in emails or other communication channels.", "isCorrect": true },
+        { "id": 1, "text": "An attack that involves the physical theft of a computer.", "isCorrect": false },
+        { "id": 2, "text": "A hacking technique used to overload servers with traffic.", "isCorrect": false },
+        { "id": 3, "text": "Software that protects against viruses.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What does a firewall do?",
+      "options": [
+        { "id": 0, "text": "Heats a building", "isCorrect": false },
+        { "id": 1, "text": "Filters incoming and outgoing network traffic based on a set of security rules.", "isCorrect": true },
+        { "id": 2, "text": "Destroys incoming malware.", "isCorrect": false },
+        { "id": 3, "text": "Monitors data within the computer.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is the purpose of using VPN?",
+      "options": [
+        { "id": 0, "text": "To create a private network from a public internet connection.", "isCorrect": true },
+        { "id": 1, "text": "To increase internet speed.", "isCorrect": false },
+        { "id": 2, "text": "To monitor network traffic.", "isCorrect": false },
+        { "id": 3, "text": "To infect computers with malware.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Which of the following best describes 'social engineering'?",
+      "options": [
+        { "id": 0, "text": "Building social networks", "isCorrect": false },
+        { "id": 1, "text": "Manipulating individuals into divulging confidential information.", "isCorrect": true },
+        { "id": 2, "text": "The study of social behavior using engineering techniques.", "isCorrect": false },
+        { "id": 3, "text": "Engineering software for social media platforms.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is encryption?",
+      "options": [
+        { "id": 0, "text": "The process of translating information into a secure format that hides its true meaning.", "isCorrect": true },
+        { "id": 1, "text": "A tool for removing viruses from your computer.", "isCorrect": false },
+        { "id": 2, "text": "A type of cybersecurity threat.", "isCorrect": false },
+        { "id": 3, "text": "Software that detects and prevents spyware.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What does 'two-factor authentication' (2FA) provide?",
+      "options": [
+        { "id": 0, "text": "Double the download speed on your computer.", "isCorrect": false },
+        { "id": 1, "text": "A second layer of security to user accounts by requiring two distinct forms of identification before access is granted.", "isCorrect": true },
+        { "id": 2, "text": "Two passwords for every account.", "isCorrect": false },
+        { "id": 3, "text": "A backup of your data stored on two servers.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Which of the following is a common indicator of a phishing attempt?",
+      "options": [
+        { "id": 0, "text": "An email that addresses you by your name and signs off with a legitimate company signature.", "isCorrect": false },
+        { "id": 1, "text": "An email from a public email domain that claims to be from a legitimate company but has poor spelling and grammar.", "isCorrect": true },
+        { "id": 2, "text": "A perfectly crafted email that redirects you to a secure website.", "isCorrect": false },
+        { "id": 3, "text": "An email that only comes from known addresses.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What action should you take if you receive a suspicious email attachment?",
+      "options": [
+        { "id": 0, "text": "Open it to see what's inside.", "isCorrect": false },
+        { "id": 1, "text": "Delete the email immediately.", "isCorrect": true },
+        { "id": 2, "text": "Forward it to your friends to check if they received a similar one.", "isCorrect": false },
+        { "id": 3, "text": "Reply to the sender for clarification.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is a 'Denial of Service' attack?",
+      "options": [
+        { "id": 0, "text": "An interruption in an authorized user's access to a computer network, typically one caused with malicious intent.", "isCorrect": true },
+        { "id": 1, "text": "When a service is denying the user from accessing the internet.", "isCorrect": false },
+        { "id": 2, "text": "A legal action taken against someone who is denying service to customers.", "isCorrect": false },
+        { "id": 3, "text": "A type of service provided by cybersecurity firms.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Which of the following is NOT a type of cybersecurity?",
+      "options": [
+        { "id": 0, "text": "Application security", "isCorrect": false },
+        { "id": 1, "text": "Network security", "isCorrect": false },
+        { "id": 2, "text": "Operative security", "isCorrect": true },
+        { "id": 3, "text": "Information security", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is a 'honeypot' in the context of cybersecurity?",
+      "options": [
+        { "id": 0, "text": "A type of malware that collects information from the computer it infects.", "isCorrect": false },
+        { "id": 1, "text": "A decoy system or network set up to attract potential cyber attackers.", "isCorrect": true },
+        { "id": 2, "text": "A secure area of a network that is fortified against attacks.", "isCorrect": false },
+        { "id": 3, "text": "Software used for managing passwords.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is meant by 'risk assessment' in cybersecurity?",
+      "options": [
+        { "id": 0, "text": "Assessing the financial risks of investing in cybersecurity tools.", "isCorrect": false },
+        { "id": 1, "text": "The process of identifying, analyzing, and evaluating risk associated with the security of a company's data.", "isCorrect": true },
+        { "id": 2, "text": "Evaluating the risks of not having a cybersecurity insurance.", "isCorrect": false },
+        { "id": 3, "text": "Determining which cybersecurity products to purchase.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What role does 'patch management' play in cybersecurity?",
+      "options": [
+        { "id": 0, "text": "It is the process of managing a network of computers.", "isCorrect": false },
+        { "id": 1, "text": "It involves the acquisition and maintenance of software to protect against malware.", "isCorrect": false },
+        { "id": 2, "text": "It is the process of managing updates for software and technologies to protect against known vulnerabilities.", "isCorrect": true },
+        { "id": 3, "text": "It refers to repairing physical components of a computer system.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is 'social proofing' in the context of social engineering?",
+      "options": [
+        { "id": 0, "text": "Building a social media presence.", "isCorrect": false },
+        { "id": 1, "text": "A technique used by cyber attackers to manipulate individuals by presenting them with fake endorsements from seemingly trusted sources.", "isCorrect": true },
+        { "id": 2, "text": "The practice of gathering social media profiles for an attack.", "isCorrect": false },
+        { "id": 3, "text": "Verifying social media accounts to prevent hacking.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Which of the following is true about 'zero-day' vulnerabilities?",
+      "options": [
+        { "id": 0, "text": "They are vulnerabilities that have been known for at least a day.", "isCorrect": false },
+        { "id": 1, "text": "They are vulnerabilities that have been patched by the time they are discovered by attackers.", "isCorrect": false },
+        { "id": 2, "text": "They refer to vulnerabilities that are unknown to the software vendor prior to the first attack.", "isCorrect": true },
+        { "id": 3, "text": "They are the least dangerous type of vulnerabilities.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is 'spear phishing'?",
+      "options": [
+        { "id": 0, "text": "A targeted attempt to steal sensitive information such as account credentials or financial information from a specific individual, often by masquerading as a trustworthy entity or person in email communications.", "isCorrect": true },
+        { "id": 1, "text": "A broad, untargeted attack that attempts to lure individuals into providing sensitive data.", "isCorrect": false },
+        { "id": 2, "text": "A phishing technique that involves fake job postings.", "isCorrect": false },
+        { "id": 3, "text": "A cybersecurity tool that protects against phishing attempts.", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "What is the main purpose of using an intrusion detection system (IDS)?",
+      "options": [
+        { "id": 0, "text": "To detect and respond to unauthorized access or breaches in a network.", "isCorrect": true },
+        { "id": 1, "text": "To monitor network traffic for increased speeds.", "isCorrect": false },
+        { "id": 2, "text": "To block users from accessing websites.", "isCorrect": false },
+        { "id": 3, "text": "To serve as a firewall and antivirus.", "isCorrect": false }
       ]
     }
-
   ]
   
