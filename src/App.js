@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedOption, setSelectedOption] = useState(null);  // New state to track selected option
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
@@ -18,17 +19,21 @@ function App() {
       });
   }, []);
 
-  const handleAnswerOptionClick = (isCorrect) => {
-    if (isCorrect) {
+  const handleAnswerOptionClick = (option) => {
+    setSelectedOption(option); // Set the selected option
+    if (option.isCorrect) {
       setScore(score + 1);
     }
 
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      setShowScore(true);
-    }
+    setTimeout(() => { // Delay to show color before moving to next question
+      const nextQuestion = currentQuestion + 1;
+      if (nextQuestion < questions.length) {
+        setCurrentQuestion(nextQuestion);
+        setSelectedOption(null); // Reset for next question
+      } else {
+        setShowScore(true);
+      }
+    }, 1000);
   };
 
   return (
@@ -46,7 +51,14 @@ function App() {
             <div className="question-text">{questions[currentQuestion].text}</div>
             <div className="answer-section">
               {questions[currentQuestion].options.map((option) => (
-                <button onClick={() => handleAnswerOptionClick(option.isCorrect)} key={option.id}>
+                <button 
+                  key={option.id}
+                  onClick={() => handleAnswerOptionClick(option)}
+                  style={{
+                    backgroundColor: selectedOption === option ? (option.isCorrect ? 'green' : 'red') : '#007BFF',
+                    color: 'white'
+                  }}
+                >
                   {option.text}
                 </button>
               ))}
