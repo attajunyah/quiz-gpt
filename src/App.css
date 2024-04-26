@@ -8,18 +8,23 @@
   box-sizing: border-box;
 }
 
-.question-section {
-  width: 100%;
-  max-width: 600px; /* Limit max width for readability */
+.question-count, .question-text {
+  width: 100%; /* Ensure full width to allow central alignment */
+  text-align: center; /* Center the text horizontally */
 }
 
 .question-count {
-  margin-bottom: 20px;
+  font-size: 20px; /* Optional: adjust the font size if necessary */
+  font-weight: bold; /* Make it bold to distinguish from the question text */
+  margin-bottom: 10px; /* Ensure there's a space between the count and the question */
 }
 
 .question-text {
-  margin-bottom: 12px;
+  font-size: 18px; /* Set appropriate font size for readability */
+  margin-bottom: 20px; /* Space before the answer section begins */
+  padding: 0 10px; /* Padding on sides to ensure text doesn't touch the edges */
 }
+
 
 .answer-section {
   display: flex;
