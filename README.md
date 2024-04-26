@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Cybersecurity Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+The Cybersecurity Quiz App is an interactive web application designed to test and enhance your knowledge of cybersecurity fundamentals. Featuring a range of questions from basic concepts to more advanced topics, this app provides a challenging and engaging way for users to learn about cybersecurity. With a dynamic question order and a visual countdown for each question, the quiz offers a unique and interactive experience.
 
-## Available Scripts
+## Features
+- **Dynamic Question Order:** Each quiz session presents questions in a randomized order, ensuring a fresh experience for repeat attempts.
+- **Countdown Timer:** Each question is timed with a visual circular countdown timer, adding a level of urgency and gamification.
+- **Responsive Design:** The app is fully responsive and provides a seamless experience on both desktop and mobile devices.
+- **Immediate Feedback:** Users receive immediate visual feedback on their answers, with correct answers highlighted in green and incorrect ones in red.
+- **Score Tracking:** At the end of each quiz session, users can see their total score, allowing them to track their progress over time.
 
-In the project directory, you can run:
+## Technologies Used
+- React.js
+- CSS
+- HTML
+- SVG for countdown timer
 
-### `npm start`
+## Setup and Installation
+To set up the quiz app on your local machine, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/attajunyah/cybersecurity-quiz-app.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd cybersecurity-quiz-app
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the application:**
+   ```bash
+   npm start
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use
+1. **Start the Quiz:** Upon loading the app, click the 'Start Quiz' button to begin.
+2. **Answer Questions:** Select your answer for each question before the time runs out. The circular timer provides a visual representation of the remaining time.
+3. **View Your Score:** After completing the quiz, your score will be displayed, allowing you to see how well you performed.
+4. **Retry:** You can start a new quiz session anytime by refreshing the app or clicking on a 'Restart Quiz' button if implemented.
 
-### `npm test`
+## Contributing
+Contributions to the Cybersecurity Quiz App are welcome. Please feel free to fork the repository, make improvements, and submit pull requests.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
