@@ -1,39 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import CircularTimer from './components/CircularTimer'; // Ensure you import the timer component
 
 function App() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedOption, setSelectedOption] = useState(null);  // New state to track selected option
+  const [selectedOption, setSelectedOption] = useState(null);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
   useEffect(() => {
     fetch('questions.json')
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         setQuestions(data);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error('Error fetching questions:', error);
       });
   }, []);
 
-  const handleAnswerOptionClick = (option) => {
-    setSelectedOption(option); // Set the selected option
-    if (option.isCorrect) {
-      setScore(score + 1);
+  const handleNextQuestion = () => {
+    setSelectedOption(null); // Reset the selected option
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      setShowScore(true);
     }
-
-    setTimeout(() => { // Delay to show color before moving to next question
-      const nextQuestion = currentQuestion + 1;
-      if (nextQuestion < questions.length) {
-        setCurrentQuestion(nextQuestion);
-        setSelectedOption(null); // Reset for next question
-      } else {
-        setShowScore(true);
-      }
-    }, 1000);
   };
 
   return (
@@ -45,18 +39,23 @@ function App() {
           </div>
         ) : (
           <div className="question-section">
+            <CircularTimer duration={5} onComplete={handleNextQuestion} />
             <div className="question-count">
               <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className="question-text">{questions[currentQuestion].text}</div>
             <div className="answer-section">
-              {questions[currentQuestion].options.map((option) => (
-                <button 
+              {questions[currentQuestion].options.map(option => (
+                <button
                   key={option.id}
-                  onClick={() => handleAnswerOptionClick(option)}
+                  onClick={() => {
+                    setSelectedOption(option);
+                    if (option.isCorrect) setScore(score + 1);
+                    setTimeout(handleNextQuestion, 1000);
+                  }}
                   style={{
                     backgroundColor: selectedOption === option ? (option.isCorrect ? 'green' : 'red') : '#007BFF',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   {option.text}
