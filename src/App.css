@@ -1,6 +1,8 @@
 .app {
   text-align: center;
   margin-top: 50px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .question-section {
@@ -20,4 +22,30 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  width: 100%; /* Make buttons full width on small screens */
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .answer-section button {
+    width: auto; /* Revert to auto width on larger screens */
+  }
+}
+
+/* Responsive typography */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Responsive margins */
+@media (max-width: 768px) {
+  .app {
+    margin-top: 20px;
+  }
 }
