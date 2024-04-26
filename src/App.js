@@ -2,6 +2,21 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import CircularTimer from './components/CircularTimer'; // Ensure you import the timer component
 
+function shuffleArray(array) {
+    let currentIndex = array.length, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (currentIndex !== 0) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+}
+
 function App() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,6 +28,7 @@ function App() {
     fetch('questions.json')
       .then(res => res.json())
       .then(data => {
+        shuffleArray(data);  // Shuffle the questions before setting them to state
         setQuestions(data);
       })
       .catch(error => {
