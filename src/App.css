@@ -1,13 +1,21 @@
 .question-section {
   width: 100%;
-  max-width: 600px; /* Control the maximum width for better readability */
-  margin: 20px auto; /* Center the card and give some space from the top */
-  background-color: #fff; /* Card background color */
-  padding: 20px; /* Padding inside the card */
-  border-radius: 8px; /* Rounded corners for the card */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-  text-align: center; /* Center the text within the card */
-  border: 1px solid #ddd; /* Light border for definition */
+  max-width: 600px;
+  /* Control the maximum width for better readability */
+  margin: 20px auto;
+  /* Center the card and give some space from the top */
+  background-color: #fff;
+  /* Card background color */
+  padding: 20px;
+  /* Padding inside the card */
+  border-radius: 8px;
+  /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  text-align: center;
+  /* Center the text within the card */
+  border: 1px solid #ddd;
+  /* Light border for definition */
 }
 
 .app {
@@ -18,10 +26,15 @@
   min-height: 100vh;
   padding: 0 20px;
   box-sizing: border-box;
-  background-color: #f4f4f4; /* Light background for the entire app for contrast */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  position: relative;
+  overflow: hidden;
 }
 
-.question-count, .question-text {
+.question-count,
+.question-text {
   width: 100%;
   text-align: center;
 }
@@ -86,4 +99,45 @@
   .question-section {
     max-width: 800px;
   }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes floatAnimation {
+  0% {
+      transform: translate(0, 0);
+      opacity: 0.5;
+  }
+  100% {
+      transform: translate(var(--x-end), var(--y-end));
+      opacity: 0;
+  }
+}
+
+.shape {
+  width: var(--size);
+  height: var(--size);
+  background-color: rgba(255, 255, 255, var(--opacity));
+  position: absolute;
+  animation: floatAnimation 20s infinite linear;
+  animation-delay: var(--animation-delay); /* Different delays for multiple shapes */
+  border-radius: var(--border-radius); /* Dynamic border-radius */
+}
+
+/* Ensure the shapes are beneath the quiz content */
+.question-section {
+  position: relative;
+  z-index: 1; /* Higher than the shapes */
 }

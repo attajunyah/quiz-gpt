@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import CircularTimer from './components/CircularTimer'; // Ensure you import the timer component
+import CircularTimer from './components/CircularTimer';
 
 function shuffleArray(array) {
     let currentIndex = array.length, randomIndex;
-
-    // While there remain elements to shuffle...
     while (currentIndex !== 0) {
-        // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
-
-        // And swap it with the current element.
-        [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
     }
 }
 
@@ -28,16 +22,14 @@ function App() {
     fetch('questions.json')
       .then(res => res.json())
       .then(data => {
-        shuffleArray(data);  // Shuffle the questions before setting them to state
+        shuffleArray(data);
         setQuestions(data);
       })
-      .catch(error => {
-        console.error('Error fetching questions:', error);
-      });
+      .catch(error => console.error('Error fetching questions:', error));
   }, []);
 
   const handleNextQuestion = () => {
-    setSelectedOption(null); // Reset the selected option
+    setSelectedOption(null);
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
@@ -46,8 +38,36 @@ function App() {
     }
   };
 
+  const generateShapes = () => {
+    const shapes = ["circle", "square", "triangle"];
+    return [...Array(10)].map((_, idx) => ({
+      id: idx,
+      type: shapes[Math.floor(Math.random() * shapes.length)],
+      size: `${Math.random() * (50 - 20) + 20}px`, // Random size between 20px and 50px
+      opacity: Math.random(), // Random opacity between 0 and 1
+      delay: `${Math.random() * 5}s`, // Random delay between 0s and 5s
+      xEnd: `${Math.random() > 0.5 ? '' : '-'}${100 + Math.random() * 100}vw`, // Random end position on X axis
+      yEnd: `${Math.random() > 0.5 ? '' : '-'}${100 + Math.random() * 100}vh` // Random end position on Y axis
+    }));
+  };
+
   return (
     <div className="app">
+      {generateShapes().map(shape => (
+        <div
+          key={shape.id}
+          className="shape"
+          style={{
+            '--size': shape.size,
+            '--opacity': shape.opacity,
+            '--animation-delay': shape.delay,
+            '--x-end': shape.xEnd,
+            '--y-end': shape.yEnd,
+            '--border-radius': shape.type === "circle" ? "50%" : (shape.type === "square" ? "0%" : "50%"),
+            'clip-path': shape.type === "triangle" ? "polygon(50% 0%, 0% 100%, 100% 100%)" : "none"
+          }}
+        ></div>
+      ))}
       {questions.length > 0 ? (
         showScore ? (
           <div className="score-section">
