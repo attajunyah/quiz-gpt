@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './App.css';
 import CircularTimer from './components/CircularTimer';
 
@@ -38,22 +38,11 @@ function App() {
     }
   };
 
-  const generateShapes = () => {
-    const shapes = ["circle", "square", "triangle"];
-    return [...Array(10)].map((_, idx) => ({
-      id: idx,
-      type: shapes[Math.floor(Math.random() * shapes.length)],
-      size: `${Math.random() * (50 - 20) + 20}px`, // Random size between 20px and 50px
-      opacity: Math.random(), // Random opacity between 0 and 1
-      delay: `${Math.random() * 5}s`, // Random delay between 0s and 5s
-      xEnd: `${Math.random() > 0.5 ? '' : '-'}${100 + Math.random() * 100}vw`, // Random end position on X axis
-      yEnd: `${Math.random() > 0.5 ? '' : '-'}${100 + Math.random() * 100}vh` // Random end position on Y axis
-    }));
-  };
+  const shapes = useMemo(() => generateShapes(), []); // Generate shapes only once
 
   return (
     <div className="app">
-      {generateShapes().map(shape => (
+      {shapes.map(shape => (
         <div
           key={shape.id}
           className="shape"
@@ -106,5 +95,18 @@ function App() {
     </div>
   );
 }
+
+const generateShapes = () => {
+  const shapes = ["circle", "square", "triangle"];
+  return [...Array(10)].map((_, idx) => ({
+    id: idx,
+    type: shapes[Math.floor(Math.random() * shapes.length)],
+    size: `${Math.random() * (50 - 20) + 20}px`, // Random size between 20px and 50px
+    opacity: Math.random(), // Random opacity between 0 and 1
+    delay: `${Math.random() * 5}s`, // Random delay between 0s and 5s
+    xEnd: `${Math.random() > 0.5 ? '' : '-'}${100 + Math.random() * 100}vw`, // Random end position on X axis
+    yEnd: `${Math.random() > 0.5 ? '' : '-'}${100 + Math.random() * 100}vh` // Random end position on Y axis
+  }));
+};
 
 export default App;

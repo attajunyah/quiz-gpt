@@ -134,10 +134,17 @@
   animation: floatAnimation 20s infinite linear;
   animation-delay: var(--animation-delay); /* Different delays for multiple shapes */
   border-radius: var(--border-radius); /* Dynamic border-radius */
+  will-change: transform, opacity; /* Prepare the browser for what will change */
 }
 
 /* Ensure the shapes are beneath the quiz content */
 .question-section {
   position: relative;
   z-index: 1; /* Higher than the shapes */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shape {
+    animation: none;
+  }
 }
