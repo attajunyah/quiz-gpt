@@ -1,5 +1,9 @@
 # Cybersecurity Quiz App
 
+## Watch the Demo Video
+
+Click on the thumbnail below to preview the video:
+
 [![Watch the video](public/milestone.png)](https://pages.uoregon.edu/fosei/110/images/milestone.mp4)
 
 ## Introduction
