@@ -1,5 +1,7 @@
 # Cybersecurity Quiz App
 
+[![Watch the video](public/milestone.png)](public/milestone.mov)
+
 ## Introduction
 The Cybersecurity Quiz App is an interactive web application designed to test and enhance your knowledge of cybersecurity fundamentals. Featuring a range of questions from basic concepts to more advanced topics, this app provides a challenging and engaging way for users to learn about cybersecurity. With a dynamic question order and a visual countdown for each question, the quiz offers a unique and interactive experience.
 

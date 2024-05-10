@@ -2,9 +2,9 @@
     {
       "text": "What is cybersecurity?",
       "options": [
-        { "id": 0, "text": "The practice of protecting systems, networks, and programs from digital attacks.", "isCorrect": true },
-        { "id": 1, "text": "The legal process of prosecuting hackers.", "isCorrect": false },
-        { "id": 2, "text": "A method of developing software.", "isCorrect": false },
+        { "id": 0, "text": "The legal process of prosecuting hackers.", "isCorrect": false },
+        { "id": 1, "text": "A method of developing software.", "isCorrect": false },
+        { "id": 2, "text": "The practice of protecting systems, networks, and programs from digital attacks.", "isCorrect": true },
         { "id": 3, "text": "A type of computer hardware.", "isCorrect": false }
       ]
     },
@@ -29,8 +29,8 @@
     {
       "text": "What is a phishing attack?",
       "options": [
-        { "id": 0, "text": "An attempt by cybercriminals to scam users by pretending to be trustworthy entities in emails or other communication channels.", "isCorrect": true },
-        { "id": 1, "text": "An attack that involves the physical theft of a computer.", "isCorrect": false },
+        { "id": 0, "text": "An attack that involves the physical theft of a computer.", "isCorrect": false },
+        { "id": 1, "text": "An attempt by cybercriminals to scam users by pretending to be trustworthy entities in emails or other communication channels.", "isCorrect": true },
         { "id": 2, "text": "A hacking technique used to overload servers with traffic.", "isCorrect": false },
         { "id": 3, "text": "Software that protects against viruses.", "isCorrect": false }
       ]
@@ -47,18 +47,18 @@
     {
       "text": "What is the purpose of using VPN?",
       "options": [
-        { "id": 0, "text": "To create a private network from a public internet connection.", "isCorrect": true },
-        { "id": 1, "text": "To increase internet speed.", "isCorrect": false },
-        { "id": 2, "text": "To monitor network traffic.", "isCorrect": false },
-        { "id": 3, "text": "To infect computers with malware.", "isCorrect": false }
+        { "id": 0, "text": "To increase internet speed.", "isCorrect": false },
+        { "id": 1, "text": "To monitor network traffic.", "isCorrect": false },
+        { "id": 2, "text": "To infect computers with malware.", "isCorrect": false },
+        { "id": 3, "text": "To create a private network from a public internet connection.", "isCorrect": true }
       ]
     },
     {
       "text": "Which of the following best describes 'social engineering'?",
       "options": [
         { "id": 0, "text": "Building social networks", "isCorrect": false },
-        { "id": 1, "text": "Manipulating individuals into divulging confidential information.", "isCorrect": true },
-        { "id": 2, "text": "The study of social behavior using engineering techniques.", "isCorrect": false },
+        { "id": 1, "text": "The study of social behavior using engineering techniques.", "isCorrect": false },
+        { "id": 2, "text": "Manipulating individuals into divulging confidential information.", "isCorrect": true },
         { "id": 3, "text": "Engineering software for social media platforms.", "isCorrect": false }
       ]
     },
@@ -75,9 +75,9 @@
       "text": "What does 'two-factor authentication' (2FA) provide?",
       "options": [
         { "id": 0, "text": "Double the download speed on your computer.", "isCorrect": false },
-        { "id": 1, "text": "A second layer of security to user accounts by requiring two distinct forms of identification before access is granted.", "isCorrect": true },
-        { "id": 2, "text": "Two passwords for every account.", "isCorrect": false },
-        { "id": 3, "text": "A backup of your data stored on two servers.", "isCorrect": false }
+        { "id": 1, "text": "Two passwords for every account.", "isCorrect": false },
+        { "id": 2, "text": "A backup of your data stored on two servers.", "isCorrect": false },
+        { "id": 3, "text": "A second layer of security to user accounts by requiring two distinct forms of identification before access is granted.", "isCorrect": true }
       ]
     },
     {
@@ -93,9 +93,9 @@
       "text": "What action should you take if you receive a suspicious email attachment?",
       "options": [
         { "id": 0, "text": "Open it to see what's inside.", "isCorrect": false },
-        { "id": 1, "text": "Delete the email immediately.", "isCorrect": true },
-        { "id": 2, "text": "Forward it to your friends to check if they received a similar one.", "isCorrect": false },
-        { "id": 3, "text": "Reply to the sender for clarification.", "isCorrect": false }
+        { "id": 1, "text": "Forward it to your friends to check if they received a similar one.", "isCorrect": false },
+        { "id": 2, "text": "Reply to the sender for clarification.", "isCorrect": false },
+        { "id": 3, "text": "Delete the email immediately.", "isCorrect": true }
       ]
     },
     {
@@ -129,17 +129,17 @@
       "text": "What is meant by 'risk assessment' in cybersecurity?",
       "options": [
         { "id": 0, "text": "Assessing the financial risks of investing in cybersecurity tools.", "isCorrect": false },
-        { "id": 1, "text": "The process of identifying, analyzing, and evaluating risk associated with the security of a company's data.", "isCorrect": true },
-        { "id": 2, "text": "Evaluating the risks of not having a cybersecurity insurance.", "isCorrect": false },
+        { "id": 1, "text": "Evaluating the risks of not having a cybersecurity insurance.", "isCorrect": false },
+        { "id": 2, "text": "The process of identifying, analyzing, and evaluating risk associated with the security of a company's data.", "isCorrect": true },
         { "id": 3, "text": "Determining which cybersecurity products to purchase.", "isCorrect": false }
       ]
     },
     {
       "text": "What role does 'patch management' play in cybersecurity?",
       "options": [
-        { "id": 0, "text": "It is the process of managing a network of computers.", "isCorrect": false },
-        { "id": 1, "text": "It involves the acquisition and maintenance of software to protect against malware.", "isCorrect": false },
-        { "id": 2, "text": "It is the process of managing updates for software and technologies to protect against known vulnerabilities.", "isCorrect": true },
+        { "id": 0, "text": "It is the process of managing updates for software and technologies to protect against known vulnerabilities.", "isCorrect": true },
+        { "id": 1, "text": "It is the process of managing a network of computers.", "isCorrect": false },
+        { "id": 2, "text": "It involves the acquisition and maintenance of software to protect against malware.", "isCorrect": false },
         { "id": 3, "text": "It refers to repairing physical components of a computer system.", "isCorrect": false }
       ]
     },
