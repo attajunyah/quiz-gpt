@@ -8,7 +8,7 @@ function App() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    fetch('questions.json')
+    fetch('questions1.json')
       .then(res => res.json())
       .then(data => {
         setQuestions(data);

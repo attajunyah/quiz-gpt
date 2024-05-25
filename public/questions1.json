@@ -1,0 +1,182 @@
+[
+  {
+      "text": "Which country in Africa is the largest producer of gold?",
+      "options": [
+          { "id": 0, "text": "Nigeria", "isCorrect": false },
+          { "id": 1, "text": "Ghana", "isCorrect": true },
+          { "id": 2, "text": "South Africa", "isCorrect": false },
+          { "id": 3, "text": "Egypt", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "What is the primary resource extracted from the Niger Delta?",
+      "options": [
+          { "id": 0, "text": "Gold", "isCorrect": false },
+          { "id": 1, "text": "Diamonds", "isCorrect": false },
+          { "id": 2, "text": "Oil", "isCorrect": true },
+          { "id": 3, "text": "Coal", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which African country is the largest producer of cocoa?",
+      "options": [
+          { "id": 0, "text": "Ivory Coast", "isCorrect": true },
+          { "id": 1, "text": "Kenya", "isCorrect": false },
+          { "id": 2, "text": "Tanzania", "isCorrect": false },
+          { "id": 3, "text": "Uganda", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "What is the main resource of Botswana?",
+      "options": [
+          { "id": 0, "text": "Oil", "isCorrect": false },
+          { "id": 1, "text": "Copper", "isCorrect": false },
+          { "id": 2, "text": "Diamonds", "isCorrect": true },
+          { "id": 3, "text": "Timber", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which river is the longest in Africa?",
+      "options": [
+          { "id": 0, "text": "Nile River", "isCorrect": true },
+          { "id": 1, "text": "Congo River", "isCorrect": false },
+          { "id": 2, "text": "Niger River", "isCorrect": false },
+          { "id": 3, "text": "Zambezi River", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which African country is known for its significant uranium deposits?",
+      "options": [
+          { "id": 0, "text": "Morocco", "isCorrect": false },
+          { "id": 1, "text": "Namibia", "isCorrect": true },
+          { "id": 2, "text": "Ethiopia", "isCorrect": false },
+          { "id": 3, "text": "Zambia", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which region in Africa is famous for its diamond mines?",
+      "options": [
+          { "id": 0, "text": "West Africa", "isCorrect": false },
+          { "id": 1, "text": "East Africa", "isCorrect": false },
+          { "id": 2, "text": "Southern Africa", "isCorrect": true },
+          { "id": 3, "text": "North Africa", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "What is the primary agricultural product of Kenya?",
+      "options": [
+          { "id": 0, "text": "Cocoa", "isCorrect": false },
+          { "id": 1, "text": "Coffee", "isCorrect": true },
+          { "id": 2, "text": "Rice", "isCorrect": false },
+          { "id": 3, "text": "Cotton", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which African lake is the world's second-largest freshwater lake by surface area?",
+      "options": [
+          { "id": 0, "text": "Lake Victoria", "isCorrect": true },
+          { "id": 1, "text": "Lake Tanganyika", "isCorrect": false },
+          { "id": 2, "text": "Lake Malawi", "isCorrect": false },
+          { "id": 3, "text": "Lake Chad", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which African country is known as the largest oil producer?",
+      "options": [
+          { "id": 0, "text": "Angola", "isCorrect": false },
+          { "id": 1, "text": "Algeria", "isCorrect": false },
+          { "id": 2, "text": "Nigeria", "isCorrect": true },
+          { "id": 3, "text": "Libya", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which country is the largest producer of platinum in Africa?",
+      "options": [
+          { "id": 0, "text": "Tanzania", "isCorrect": false },
+          { "id": 1, "text": "South Africa", "isCorrect": true },
+          { "id": 2, "text": "Egypt", "isCorrect": false },
+          { "id": 3, "text": "Ghana", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "What is the main resource found in the Katanga region of the Democratic Republic of Congo?",
+      "options": [
+          { "id": 0, "text": "Gold", "isCorrect": false },
+          { "id": 1, "text": "Copper", "isCorrect": true },
+          { "id": 2, "text": "Oil", "isCorrect": false },
+          { "id": 3, "text": "Coal", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which African country is known for its significant coffee exports?",
+      "options": [
+          { "id": 0, "text": "Senegal", "isCorrect": false },
+          { "id": 1, "text": "Ethiopia", "isCorrect": true },
+          { "id": 2, "text": "Sudan", "isCorrect": false },
+          { "id": 3, "text": "Libya", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which of the following countries is the largest producer of palm oil in Africa?",
+      "options": [
+          { "id": 0, "text": "Liberia", "isCorrect": false },
+          { "id": 1, "text": "Sierra Leone", "isCorrect": false },
+          { "id": 2, "text": "Nigeria", "isCorrect": true },
+          { "id": 3, "text": "Ghana", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which natural resource is Lesotho famous for?",
+      "options": [
+          { "id": 0, "text": "Diamonds", "isCorrect": true },
+          { "id": 1, "text": "Oil", "isCorrect": false },
+          { "id": 2, "text": "Gold", "isCorrect": false },
+          { "id": 3, "text": "Timber", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which African country is the leading producer of copper?",
+      "options": [
+          { "id": 0, "text": "Botswana", "isCorrect": false },
+          { "id": 1, "text": "Zambia", "isCorrect": true },
+          { "id": 2, "text": "Ghana", "isCorrect": false },
+          { "id": 3, "text": "Morocco", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which country is known for having the largest reserves of bauxite in Africa?",
+      "options": [
+          { "id": 0, "text": "Guinea", "isCorrect": true },
+          { "id": 1, "text": "Mali", "isCorrect": false },
+          { "id": 2, "text": "Ivory Coast", "isCorrect": false },
+          { "id": 3, "text": "Sierra Leone", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "What resource is primarily extracted from the Witwatersrand basin in South Africa?",
+      "options": [
+          { "id": 0, "text": "Copper", "isCorrect": false },
+          { "id": 1, "text": "Gold", "isCorrect": true },
+          { "id": 2, "text": "Oil", "isCorrect": false },
+          { "id": 3, "text": "Diamonds", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "Which African country is known for the significant production of tea?",
+      "options": [
+          { "id": 0, "text": "Somalia", "isCorrect": false },
+          { "id": 1, "text": "Kenya", "isCorrect": true },
+          { "id": 2, "text": "Chad", "isCorrect": false },
+          { "id": 3, "text": "Angola", "isCorrect": false }
+      ]
+  },
+  {
+      "text": "What is the main agricultural product of Egypt?",
+      "options": [
+          { "id": 0, "text": "Wheat", "isCorrect": true },
+          { "id": 1, "text": "Coffee", "isCorrect": false },
+          { "id": 2, "text": "Cocoa", "isCorrect": false },
+          { "id": 3, "text": "Tea", "isCorrect": false }
+      ]
+  }
+]
